@@ -231,7 +231,7 @@ def build_caption_model(vocab_size):
 
 def main():
     # load captions
-    caps = load_captions(CAPTIONS_FILE)
+    caps = load_captions_csv(CAPTIONS_FILE)
     all_captions = [c for caplist in caps.values() for c in caplist]
 
     # tokenizer
